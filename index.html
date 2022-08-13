@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/22063edca9.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-header.jpg">
+      <img src="images/desktop/image-header.jpg" alt="header">
+    </picture>
+
+    <nav>
+      <h1>sunnyside</h1>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Services</a></li>
+        <li class="nav-item"><a href="#">Projects</a></li>
+        <li class="nav-item contact"><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="clicked()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    
+    <div class="menu" id="menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#">About</a></li>
+        <li class="menu-item"><a href="#">Services</a></li>
+        <li class="menu-item"><a href="#">Projects</a></li>
+        <li class="menu-item contact"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <h1>We are creatives</h1>
+    <img class="arrow-down" src="images/icon-arrow-down.svg" alt="arrow-down">
+  </header>
+
+  <section class="transform">
+    <div class="transform-text">
+      <h1>Transform your brand</h1>
+      <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <p class="learn-more"><a href="#">Learn More</a></p>
+    </div>
+
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-transform.jpg">
+      <img src="images/desktop/image-transform.jpg" alt="transform">
+    </picture>
+  </section>
+
+  <section class="stand-out">
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-stand-out.jpg">
+      <img src="images/desktop/image-stand-out.jpg" alt="stand-out">
+    </picture>
+
+    <div class="stand-out-text">
+      <h1>Stand out to the right audience</h1>
+      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+      <p class="learn-more"><a href="#">Learn More</a></p>
+    </div>
+  </section>
+
+  <section class="graphic-photography">
+    <div class="graphic-design">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/mobile/image-graphic-design.jpg">
+        <img src="images/desktop/image-graphic-design.jpg" alt="graphic-design">
+      </picture>
+      <div class="graphic-text">
+        <h1>Graphic Design</h1>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+      </div>
+    </div>
+
+    <div class="photography">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/mobile/image-photography.jpg">
+        <img src="images/desktop/image-photography.jpg" alt="photography">
+      </picture>
+      <div class="photo-text">
+        <h1>Photography</h1>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h1>Client Testimonials</h1>
+    <div class="client-testimonials">
+      <div class="emily">
+        <img src="images/image-emily.jpg" alt="emily">
+        <p class="feedback">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <div class="user">
+          <h3 class="name">Emily R.</h3>
+          <p class="occupation">Marketing Director</p>
+        </div>
+      </div>
+
+      <div class="thomas">
+        <img src="images/image-thomas.jpg" alt="thomas">
+        <p class="feedback">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+        <div class="user">
+          <h3 class="name">Thomas S.</h3>
+          <p class="occupation">Chief Operating Officer</p>
+        </div>
+      </div>
+
+      <div class="jennie">
+        <img src="images/image-jennie.jpg" alt="jennie">
+        <p class="feedback">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <div class="user">
+          <h3 class="name">Jennie F.</h3>
+          <p class="occupation">Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+    </picture>
+
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-gallery-orange.jpg">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+    </picture>
+
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-gallery-cone.jpg">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="cone">
+    </picture>
+    
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+    </picture>
+  </section>
+
+  <footer>
+    <h1>sunnyside</h1>
+    <div class="footer-list">
+      <p class="footer-item"><a href="#">About</a></p>
+      <p class="footer-item"><a href="#">Services</a></p>
+      <p class="footer-item"><a href="#">Projects</a></p>
+    </div>
+
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+    </div>
+  </footer>
+  
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/dracowarz">Draco</a>.
+  </p>
+</body>
+</html>

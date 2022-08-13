@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --white-clr: #fff;
+    --white-30: rgba(255, 255, 255, 0.3);
+    --black-clr: #000;
+    --dark-gray-clr: hsl(232, 10%, 55%);
+    --light-gray-clr: hsl(210, 4%, 67%);
+    --graphic-design-clr: hsl(167, 40%, 24%);
+    --photography-clr: hsl(198, 62%, 26%);
+    --lightgreen-clr: hsl(168, 92%, 75%);
+    --footer-clr: hsl(168, 34%, 41%);
+    --barlow-600: 'Barlow', sans-serif;
+    --fraunces-700-900: 'Fraunces', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header > picture > img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+nav, 
+.nav-list {
+    display: flex;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: var(--white-clr);
+    font-family: var(--fraunces-700-900);
+}
+
+.nav-list {
+    gap: 3em;
+}
+
+.nav-item {
+    list-style: none;
+    font-family: var(--barlow-600);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--white-clr);
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: var(--white-clr);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white-clr);
+}
+
+.menu-list {
+    list-style: none;
+    font-family: var(--barlow-600);
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: var(--dark-gray-clr);
+}
+
+.contact a {
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: var(--black-clr);
+    font-family: var(--fraunces-700-900);
+}
+
+header > h1 {
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+    color: var(--white-clr);
+    font-family: var(--fraunces-700-900);
+}
+
+.arrow-down {
+    position: absolute;
+    text-align: center;
+}
+
+/* TRANSFORM / STAND-OUT / GRAPHIC-PHOTOGRAPHY */
+
+.transform,
+.stand-out,
+.graphic-photography {
+    display: flex;
+}
+
+.transform-text,
+.stand-out-text {
+    align-self: center;
+}
+
+.transform-text h1,
+.stand-out-text h1,
+.graphic-text h1,
+.photo-text h1 {
+    font-family: var(--fraunces-700-900);
+    font-weight: 900;
+}
+
+.transform-text p,
+.stand-out-text p {
+    margin-top: 2em;
+    color: var(--dark-gray-clr);
+    line-height: 1.5;
+    font-family: var(--barlow-600);
+}
+
+.transform > picture > img,
+.stand-out > picture > img,
+.graphic-design > picture > img, 
+.photography > picture > img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.learn-more a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black-clr);
+    font-family: var(--fraunces-700-900);
+    font-weight: 900;
+}
+
+/* GRAPHIC DESIGN & PHOTOGRAPHY */
+
+.graphic-text,
+.photo-text {
+    position: absolute;
+    text-align: center;
+}
+
+.graphic-text {
+    color: var(--graphic-design-clr);
+}
+
+.photo-text {
+    color: var(--photography-clr);
+}
+
+.graphic-text p,
+.photo-text p {
+    margin-top: 2em;
+    line-height: 1.8;
+    font-family: var(--barlow-600);
+}
+
+/* SERVICES */
+
+.services {
+    text-align: center;
+}
+
+.services h1 {
+    text-transform: uppercase;
+    font-family: var(--fraunces-700-900);
+    font-weight: 700;
+    letter-spacing: .2em;
+    color: var(--light-gray-clr);
+}
+
+.client-testimonials {
+    display: flex;
+    align-items: center;
+}
+
+.emily img,
+.thomas img,
+.jennie img {
+    border-radius: 50%;
+    height: auto;
+}
+
+.feedback,
+.occupation {
+    font-family: var(--barlow-600);
+}
+
+.feedback {
+    line-height: 1.8;
+    color: var(--dark-gray-clr);
+}
+
+.user {
+    line-height: 2;
+}
+
+.name {
+    font-family: var(--fraunces-700-900);
+    font-weight: 900;
+}
+
+.occupation {
+    color: var(--light-gray-clr);
+}
+
+/* PROJECTS */
+
+.projects img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    background-color: var(--lightgreen-clr);
+}
+
+footer h1,
+.footer-list,
+.social {
+    margin: 0 auto;
+}
+
+footer h1 {
+    color: hsl(169, 42%, 30%);
+    font-family: var(--fraunces-700-900);
+    font-weight: 900;
+}
+
+.footer-list { 
+    display: flex;
+    font-family: var(--barlow-600);
+}
+
+.footer-item a,
+.social a {
+    color: hsl(169, 42%, 30%);
+}
+
+.footer-item a { text-decoration: none; }
+
+.footer-item a:hover,
+.social a:hover {
+    color: var(--white-clr);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 400px) {
+    
+    nav { padding: 5vw; }
+
+    nav h1 { font-size: 6vw; }
+    
+    .nav-list { display: none; }
+
+    .menu-icon { 
+        display: block;
+        font-size: 6vw;
+    }
+
+    .menu {
+        width: 90%;
+        padding: 10vw 0;
+        top: 18vw;
+        left: 5.2vw;
+        z-index: 999;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8vw;
+        font-size: 5vw;
+    }
+    
+    .contact {
+        margin-top: 3vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .contact a {
+        padding: 4.5vw 7vw;
+        font-size: 4vw;
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    header > h1 {
+        top: 35vw;
+        font-size: 10vw;
+    }
+
+    .arrow-down {
+        top: 80vw;
+        left: 46.5vw;
+        height: 28.5vw;
+        width: 9vw;
+    }
+
+    .transform {
+        flex-direction: column-reverse;
+    }
+
+    .transform-text,
+    .stand-out-text {
+        text-align: center;
+        padding: 15vw;
+    }
+
+    .transform-text h1,
+    .stand-out-text h1,
+    .graphic-text h1,
+    .photo-text h1 {
+        font-size: 8vw;
+    }
+
+    .transform-text p,
+    .stand-out-text p,
+    .graphic-text p,
+    .photo-text p {
+        font-size: 3.9vw;
+    }
+
+    .stand-out,
+    .graphic-photography {
+        flex-direction: column;
+    }
+
+    .graphic-text,
+    .photo-text {
+        padding: 0 8vw;
+    }
+
+    .graphic-text {
+        top: 615vw;
+    }
+
+    .photo-text {
+        top: 777vw;
+    }
+
+    .services {
+        padding: 16vw 13vw;
+    }
+
+    .services h1 {
+        font-size: 4.2vw;
+    }
+    
+    .client-testimonials {
+        flex-direction: column;
+        gap: 15vw;
+        margin-top: 14vw;
+    }
+
+    .emily img,
+    .thomas img,
+    .jennie img {
+        width: 24%;
+    }
+
+    .feedback {
+        margin-top: 8vw;
+        font-size: 4vw;
+    }
+
+    .user {
+        margin-top: 7vw;
+    }
+
+    .name {
+        font-size: 4.7vw;
+    }
+
+    .occupation {
+        font-size: 3.5vw;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        padding: 13vw 0;
+    }
+
+    footer h1 {
+        font-size: 8vw;
+    }
+
+    .footer-list {
+        font-size: 4vw;
+        margin-top: 10vw;
+        gap: 16vw;
+    }
+
+    .social { margin-top: 20vw;}
+    .fa-brands {
+        margin-right: 5vw;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 400.5px) and (max-width: 1000px) {
+    
+    nav { padding: 2.5vw 3vw; }
+
+    nav h1 { font-size: 2.4vw; }
+
+    .nav-list { display: none; }
+
+    .menu-icon { 
+        display: block;
+        font-size: 2.4vw;
+    }
+
+    .menu {
+        width: 95%;
+        padding: 5vw 0;
+        top: 8.2vw;
+        left: 2.5vw;
+        z-index: 999;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5vw;
+        font-size: 2vw;
+    }
+
+    .contact {
+        margin-top: 1.5vw;
+    }
+
+    .contact a {
+        padding: 1.8vw 2.8vw;
+        font-size: 1.6vw;
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    header > h1 {
+        top: 13vw;
+        font-size: 4vw;
+    }
+
+    .arrow-down {
+        top: 22vw;
+        left: 48.5vw;
+        height: 11.4vw;
+        width: 3.6vw;
+    }
+
+    .transform-text,
+    .stand-out-text {
+        max-width: 50%;
+        padding: 0 11vw;
+    }
+
+    .transform-text h1,
+    .stand-out-text h1 {
+        font-size: 2.5vw;
+    }
+
+    .transform-text p,
+    .stand-out-text p {
+        font-size: 1.09vw;
+    }
+
+    .transform > picture,
+    .stand-out > picture {
+        max-width: 50%;
+    }
+
+    .graphic-design,
+    .photography {
+        min-width: 50%;
+    }
+
+    .graphic-text,
+    .photo-text {
+        max-width: 50%;
+        padding: 0 12vw;
+        top: 164.5vw;
+    }
+
+    .graphic-text h1,
+    .photo-text h1 {
+        font-size: 2vw;
+    }
+
+    .graphic-text p,
+    .photo-text p {
+        font-size: 1.2vw;
+    }
+
+    .services {
+        padding: 10vw 14vw;
+    }
+
+    .services h1 {
+        font-size: 1.56vw;
+    }
+
+    .client-testimonials {
+        gap: 3vw;
+        margin-top: 5.75vw;
+    }
+
+    .emily img,
+    .thomas img,
+    .jennie img {
+        width: 20%;
+    }
+
+    .feedback {
+        margin-top: 3.2vw;
+        font-size: 1.045vw;
+    }
+
+    .user {
+        margin-top: 3.2vw;
+    }
+
+    .name {
+        font-size: 1.2vw;
+    }
+
+    .occupation {
+        font-size: 1vw;
+    }
+
+    .projects {
+        display: flex;
+    }
+
+    footer {
+        padding: 3.5vw 0;
+    }
+
+    footer h1 {
+        font-size: 2.1vw;
+    }
+
+    .footer-list {
+        font-size: 1.045vw;
+        margin-top: 2.5vw;
+        gap: 4vw;
+    }
+
+    .social { margin-top: 5vw; }
+    .fa-brands { 
+        margin-right: 1.2vw; 
+        font-size: 1.045vw;
+    }
+}
+
+@media screen and  (min-width: 1000.5px) {
+
+    nav  { padding: 1.5em; }
+
+    .contact a {
+        padding: 1em 1.5em;
+        background-color: var(--white-clr);
+    }
+    .contact a:hover { background-color: var(--white-30); }
+
+    header > h1 {
+        top: 13vw;
+        font-size: 4vw;
+    }
+
+    .arrow-down {
+        top: 22vw;
+        left: 48.5vw;
+        height: 11.4vw;
+        width: 3.6vw;
+    }
+
+    .transform-text,
+    .stand-out-text {
+        max-width: 50%;
+        padding: 0 11vw;
+    }
+
+    .transform-text h1,
+    .stand-out-text h1 {
+        font-size: 2.5vw;
+    }
+
+    .transform-text p,
+    .stand-out-text p {
+        font-size: 1.1vw;
+    }
+
+    .transform > picture,
+    .stand-out > picture {
+        min-width: 50%;
+    }
+
+    .graphic-design,
+    .photography {
+        min-width: 50%;
+    }
+
+    .graphic-text,
+    .photo-text {
+        max-width: 50%;
+        padding: 0 12vw;
+        top: 164.5vw;
+    }
+
+    .graphic-text h1,
+    .photo-text h1 {
+        font-size: 2vw;
+    }
+
+    .graphic-text p,
+    .photo-text p {
+        font-size: 1.2vw;
+    }
+
+    .services {
+        padding: 10vw 14vw;
+    }
+
+    .services h1 {
+        font-size: 1.56vw;
+    }
+
+    .client-testimonials {
+        gap: 3vw;
+        margin-top: 5.75vw;
+    }
+
+    .emily img,
+    .thomas img,
+    .jennie img {
+        width: 20%;
+    }
+
+    .feedback {
+        margin-top: 3.2vw;
+        font-size: 1.045vw;
+    }
+
+    .user {
+        margin-top: 3.2vw;
+    }
+
+    .name {
+        font-size: 1.2vw;
+    }
+
+    .occupation {
+        font-size: 1vw;
+    }
+
+    .projects {
+        display: flex;
+    }
+    
+    footer {
+        padding: 3.5vw 0;
+    }
+
+    footer h1 {
+        font-size: 2.1vw;
+    }
+
+    .footer-list {
+        font-size: 1.045vw;
+        margin-top: 2.5vw;
+        gap: 4vw;
+    }
+
+    .social { margin-top: 5vw; }
+    .fa-brands { 
+        margin-right: 1.2vw; 
+        font-size: 1.045vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
